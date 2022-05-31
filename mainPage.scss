@@ -14,18 +14,19 @@
 }
 
 .main-text {
-    width: 50%;
-    height: 65vh;
+    width: 60%;
+    height: 70vh;
     margin: 0 5px;
     padding: 0 40px;
     @include flex(column, space-evenly, flex-start);
     h1 {
-        font-size: 46px;
+        font-size: 60px;
         i {
             color: var(--contrast);
         }
     }
     p {
+        font-size: 17px;
         color: var(--grey-color);
     }
 }

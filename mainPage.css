@@ -21,8 +21,8 @@
 }
 
 .main-text {
-  width: 50%;
-  height: 65vh;
+  width: 60%;
+  height: 70vh;
   margin: 0 5px;
   padding: 0 40px;
   display: -webkit-box;
@@ -41,7 +41,7 @@
 }
 
 .main-text h1 {
-  font-size: 46px;
+  font-size: 60px;
 }
 
 .main-text h1 i {
@@ -49,6 +49,7 @@
 }
 
 .main-text p {
+  font-size: 17px;
   color: var(--grey-color);
 }
 
