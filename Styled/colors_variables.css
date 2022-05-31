@@ -1,8 +1,9 @@
 :root {
-    --background: #EEEEEE;
+    --background: #ffffff;
     --contrast: #F6C90E;
 
     /* Fonts */
     --font-color: #3A4750;
+    --grey-color: rgba(0, 0, 0, 0.6);
     --main-fonts: 'Poppins', sans-serif;
 }

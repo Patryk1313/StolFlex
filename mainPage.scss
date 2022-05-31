@@ -1,0 +1,71 @@
+@mixin flex($direction, $jc, $ai) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $jc;
+    align-items: $ai;
+}
+.main {
+    width: 100%;
+    height: 95vh + 5vh;
+    @include flex(row, center, center);
+    .container {
+        width: 100%;
+    }
+}
+
+.main-text {
+    width: 50%;
+    height: 65vh;
+    margin: 0 5px;
+    padding: 0 40px;
+    @include flex(column, space-evenly, flex-start);
+    h1 {
+        font-size: 46px;
+        i {
+            color: var(--contrast);
+        }
+    }
+    p {
+        color: var(--grey-color);
+    }
+}
+
+.main-img {
+    width: 50%;
+    height: 100vh;
+    margin: 0 5px;
+    background-image: url(/Assets/img/stol-z-drewna-z-zywica.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 500px;
+}
+
+.main-button {
+    width: 250px;
+    height: 35px;
+
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+
+    font-size: 14px;
+    font-weight: bold;
+    background-color: var(--contrast);
+    transition: 0.2s ease;
+    @include flex(row, space-evenly, center);
+    i {
+        font-size: 20px;
+    }
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
+        transform: scale(1.1);
+    }
+}
+
+.x {
+    width: 100%;
+    height: 2000px;
+}
